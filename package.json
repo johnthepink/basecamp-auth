@@ -1,0 +1,26 @@
+{
+  "name": "basecamp-auth",
+  "version": "1.0.0",
+  "description": "Starter project for an ES6 RESTful Express API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johnthepink/basecamp-auth.git"
+  },
+  "author": "johnthepink",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "express": "^4.13.3",
+    "oauth": "^0.9.14",
+    "querystring": "^0.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/johnthepink/basecamp-auth/issues"
+  },
+  "homepage": "https://github.com/johnthepink/basecamp-auth#readme"
+}
