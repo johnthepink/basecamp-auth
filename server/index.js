@@ -26,10 +26,11 @@ const authURL = oauth2.getAuthorizeUrl(authOptions)
 
 const app = express();
 app.server = http.createServer(app);
+app.set('views', './views');
+app.set('view engine', 'jade');
 
 app.get('/', (req, res) => {
-  const authLink = `<a href="${authURL}">Authenticate with Basecamp</a>`;
-  res.send(authLink);
+  res.render('home', { authURL: authURL })
 });
 
 app.get('/oauth/callback', (req, res) => {
@@ -50,7 +51,7 @@ app.get('/oauth/callback', (req, res) => {
       }
       else {
         console.log('Obtained accessToken: ', accessToken);
-        res.send(accessToken);
+        res.render('callback', { token: accessToken });
       }
   });
 });

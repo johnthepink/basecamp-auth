@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title alfred2-basecamp auth
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+
+  body
+    .container
+      .row
+        .col-md-12
+          h1.text-center alfred2-basecamp auth
+          img.img-responsive.center-block(src='https://github.com/johnthepink/alfred2-basecamp/raw/master/workflow/screenshot.png')
+      .row
+        .col-sm-6.col-sm-offset-3
+          p.lead.text-center Basecamp 3 requires a personal token to interact with its API. Click below to generate your token, then paste it in Alfred.
+
+      .row
+        .col-sm-4.col-sm-offset-4
+          a.btn.btn-success.center-block(href=authURL)
+            img(src="https://github.com/johnthepink/alfred2-basecamp/raw/master/workflow/icon.png", width="20px")
+            span(style="margin-left: 10px") Authenticate Basecamp
